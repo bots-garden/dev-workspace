@@ -33,17 +33,9 @@ RUN go install github.com/go-task/task/v3/cmd/task@latest
 RUN go install -v golang.org/x/tools/gopls@latest
 
 # ------------------------------------
-# Install Rust
+# Install Rust support
 # ------------------------------------
-RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
-
-RUN echo "export CARGO_HOME=\"\$HOME/.cargo\"" >> ${HOME}/.bashrc
-RUN echo "export PATH=\"\$CARGO_HOME/bin:\$PATH\"" >> ${HOME}/.bashrc
-
-RUN curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 RUN rustup target add wasm32-wasi
 RUN rustup target add wasm32-unknown-unknown
 
 RUN cargo install -f wasm-bindgen-cli
-
-
