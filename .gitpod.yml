@@ -24,6 +24,5 @@ vscode:
     - aaron-bond.better-comments
     - golang.go
     - rust-lang.rust-analyzer
-    - task.vscode-task
 
 

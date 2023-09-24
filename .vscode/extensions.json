@@ -1,7 +1,13 @@
 {
-    "recommendations": [
-      "pkief.material-icon-theme",
-      "pkief.material-product-icons",
-      "aaron-bond.better-comments"
-    ]
+  "recommendations": [
+    "pkief.material-icon-theme",
+    "pkief.material-product-icons",
+    "aaron-bond.better-comments",
+    "DaltonMenezes.aura-theme",
+    "GitHub.github-vscode-theme",
+    "huytd.github-light-monochrome",
+    "wesbos.theme-cobalt2",
+    "golang.go",
+    "rust-lang.rust-analyzer"
+  ]
 }
